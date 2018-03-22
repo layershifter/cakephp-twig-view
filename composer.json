@@ -6,9 +6,6 @@
     "license": "MIT",
     "type": "library",
     "keywords": ["templating", "cakephp"],
-    "config": {
-        "vendor-dir": "vendors"
-    },
     "authors": [
         {
             "name": "Kjell Bublitz",
@@ -17,6 +14,13 @@
             "role": "Lead Developer"
         }
     ],
+    "autoload": {
+         "classmap": [
+             "extensions",
+             "libs",
+             "views"
+         ]
+    },    
     "require": {
         "twig/twig": "~1.16",
         "twig/extensions": "~1.2"
