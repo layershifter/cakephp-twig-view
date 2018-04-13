@@ -44,7 +44,8 @@ class TwigView extends ThemeView {
 			'i18n',
 			'number',
 			'text',
-			'time'
+			'time',
+			'view'
 		)
 	);
 	
