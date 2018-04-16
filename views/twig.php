@@ -107,10 +107,6 @@ class TwigView extends ThemeView {
 			'debug' => (Configure::read() > 0),
 		));
 		
-		// Do not escape return values (from helpers)
-		$escaper = new Twig_Extension_Escaper(false);
-		$this->Twig->addExtension($escaper);
-		
 		// Add custom TwigView Extensions
 		$this->twigLoadedExtensions = array();
 		foreach ($this->twigOptions['extensions'] as $extensionName) {
